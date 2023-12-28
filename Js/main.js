@@ -2,7 +2,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     const hero = document.querySelector('.hero');
     let indiceAtualImagem = 0;
-    const imagens = ['Paisagen.jpg', 'Paisagen2.jpg','Paisagen3.jpg','Paisagen4.jpg','Paisagen5.jpg',];
+    const imagens = ['./Imagens/Paisagen.jpg', './Imagens/Paisagen2.jpg','./Imagens/Paisagen3.jpg','./Imagens/Paisagen4.jpg','./Imagens/Paisagen5.jpg',];
 
     function mudarImagemFundo(direcao) {
       if (direcao === 'direita') {
