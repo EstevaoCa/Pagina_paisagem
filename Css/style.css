@@ -50,7 +50,6 @@ img {
 /* Lines 1 to 63 of your code */
 
 .hero {
-  background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.9)) url (Paisagen.jpg);
   min-height: 100vh;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -65,12 +64,18 @@ img {
   color: var(--color-light);
 }
 .hero-content h2{
-  font-size: 7vmin;
+  font-size: 7vh;
+}
+.hero-content .btn{
+  width: 100%;
 }
 .hero-content p {
   font-weight: 600;
   margin-bottom: 2rem;
   line-height: 3.6rem;
+  font-size: 3vh;
+  line-height: 10vw;
+  max-width: 500px;
 }
 .hotel-title {
   font-size: 5vmin;
