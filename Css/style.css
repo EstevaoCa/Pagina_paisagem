@@ -1,5 +1,4 @@
 /* Reset CSS */
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -12,7 +11,7 @@
 :root {
   --color-light: #ffffff;
   --color-blue: #6959c5;
-  --transition: .5s;
+  --transition: 0.5s;
 }
 
 html {
@@ -23,7 +22,7 @@ body {
   font-size: 1.6rem;
 }
 
-/* formatações genéricas */
+/* Formatações genéricas */
 a {
   text-decoration: none;
   color: var(--color-light);
@@ -35,6 +34,7 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+
 .btn {
   background-color: var(--color-blue);
   border: 2px solid var(--color-blue);
@@ -43,40 +43,50 @@ img {
   color: var(--color-light);
   transition: var(--transition);
 }
+
 .btn:hover {
   background-color: transparent;
   color: var(--color-blue);
 }
-/* Lines 1 to 63 of your code */
+
+/* Seções adicionais do código... */
 
 .hero {
   min-height: 100vh;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  align-items: center;
   width: 100%;
+  position: relative;
 }
+
 .hero-content {
-  width: 90%;
-  padding: 5rem;
+  padding: 0 6rem;
   color: var(--color-light);
+  box-sizing: border-box; /* Adicionado para garantir que o padding não ultrapasse o tamanho total */
+  position: absolute;
+  top: 50%; /* Move o conteúdo para o meio verticalmente */
+  left: 50%; /* Move o conteúdo para o meio horizontalmente */
+  transform: translate(-50%, -50%); /* Centraliza o conteúdo no meio do .hero */
+  width: 100%; /* Garante que a largura do conteúdo seja 100% do .hero */
 }
-.hero-content h2{
-  font-size: 7vh;
-}
-.hero-content .btn{
+.hero-content h2 {
+  font-size: 10vh;
   width: 100%;
 }
+
+.hero-content .btn {
+  margin: 0 auto;
+}
+
 .hero-content p {
-  font-weight: 600;
+  font-weight: normal;
   margin-bottom: 2rem;
   line-height: 3.6rem;
   font-size: 3vh;
-  line-height: 10vw;
   max-width: 500px;
 }
+
 .hotel-title {
   font-size: 5vmin;
   text-align: center;
@@ -84,6 +94,7 @@ img {
   color: var(--color-blue);
   border: none;
 }
+
 .hotel-list {
   width: 100%;
   display: flex;
@@ -91,6 +102,7 @@ img {
   align-items: center;
   justify-content: space-evenly;
 }
+
 .hotel-item {
   width: 80%;
   max-width: 350px;
@@ -103,25 +115,31 @@ img {
   padding: 2rem;
   box-shadow: 1px 1px 30px #ccc;
   border-radius: 5px;
-  transition: background-image 5s ;
+  transition: background-image 5s;
 }
-.hotel-item h3{
+
+.hotel-item h3 {
   margin: 2rem 0;
   font-weight: 800;
 }
+
 .hotel-item p {
   margin: 0 0 3rem;
   width: 90%;
 }
+
 .hotel-item:hover {
   transform: scale(1.1);
   background-color: #EFE6FF;
 }
-.hotel-item:hover p{
+
+.hotel-item:hover p,
+.hotel-item:hover h3 {
   color: var(--color-blue);
-  transition: var(--transition)
+  transition: var(--transition);
 }
-.hotel-item:hover h3{
-  color: var(--color-blue);
-  transition: var(--transition)
-}
+
+
+
+
+
